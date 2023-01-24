@@ -1,0 +1,660 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+   background-color: rgb(16, 14, 22);
+   
+}
+
+html,body{
+    scroll-behavior: smooth;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    background-color: black;
+    top: 0;
+    opacity: 80%;
+    z-index: 1;
+}
+header h2{
+    margin: 1rem;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Pacifico', cursive;
+    
+
+}
+header span{
+    color: blueviolet;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Pacifico', cursive;
+}
+header ul {
+    display: flex;
+    list-style: none;
+}
+header ul li a{
+    margin: 0 1rem;
+    text-decoration: none;
+    color: #fff;
+}
+
+header ul li a:hover{
+    border-bottom: 2px solid white;
+   
+}
+#mobile-nav {
+    color: #fff;
+    font-size: 2rem ;
+    margin: 0px 1rem ;
+    display: none;
+    cursor: pointer;
+    position: relative;
+    right: 20px;
+   
+}
+    
+@media only screen and (max-width: 500px){
+    .links a{
+        font-size: 0.7rem;
+        width: 20%;
+    }
+}
+
+@media only screen and (max-width: 700px){
+
+   
+    .ulclass{
+    visibility: hidden;
+    position: absolute;
+    left: 0px;
+    margin-top: 3rem;
+    background-color: blueviolet;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    } 
+    .ulclass li {
+      margin: 1rem;
+    }
+    #mobile-nav{
+        display: block;
+    }
+    .ulclass.ulclass1{
+        visibility: visible;
+    }
+}
+
+/** hier ga ik main- page stylen in deze section kan je mijn cv downloaden en wat meer over mij lezen**/
+
+.main-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+@media only screen and (max-width: 800px){
+    .main-page{
+        flex-direction: column;
+    } 
+}
+.main1{
+    color: #fff;
+    margin: 2rem;
+    width: 50%;
+   
+}
+.main1 span{
+    color: blueviolet;
+
+}
+.main1 h6{
+    margin-bottom: 2rem;
+    font-size: 1rem;
+}
+.main1 h2{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+.main1 h3{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.main1 p{
+  margin-bottom: 2rem;
+}
+.main1 ul{
+    margin-bottom: 1rem;
+    display: flex;
+    align-items:center;
+    
+}
+.main1 ul li{
+    list-style: none;
+}
+.main1 ul a i {
+  font-size: 2rem;
+  padding: 1rem;
+  color: #fff;
+}
+#facebook{
+    background-color: blue;
+    border-radius: 100%; 
+    margin-left: 5px;  
+}
+#twitter{
+    background-color: rgb(0, 242, 255);
+    border-radius: 100%;
+}
+#github{
+    background-color: rgb(69, 66, 66);
+    border-radius: 100%;
+    margin-left: 5px;
+}
+#instagram{
+    background: linear-gradient(45deg, red, blue);
+    border-radius: 100%;
+    margin-right: 5px;
+    
+}
+.links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 3rem;  
+    
+}
+
+.links a {
+    width: 40%;
+    text-decoration: none;
+    color: black;
+    background-color: rgb(230, 226, 235);
+    padding: 0.5rem;
+    border-radius: 5px;
+    text-align: center;
+}
+.main2{
+    width: 50%;
+}
+.main2 img{
+    width: 100%;
+    height: 100%;
+}
+/** hier komt about section in deze section zijn wat informatie over mij **/
+.about{
+    margin-top: 8rem;
+    color: #fff;
+}
+.head-about{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+    height: 10vh;
+}
+.head-about h2{
+    margin-top: 1rem;
+    font-size: 3rem;
+    border-bottom: solid 2px white;
+    width: 60%;
+}
+.icon-about{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 4rem;
+    gap: 1rem;
+    overflow: hidden;
+}
+.icon1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgb(255, 255, 255,0.13);
+    box-shadow: 10px 10px 10px rgb(0, 0, 0,5);
+    padding: 1rem;
+    color: white;
+    border-radius: 5px;
+    margin: 1rem;
+    cursor: pointer;
+    
+}
+@media only screen and (max-width: 900px){
+    .icon-about{
+        grid-template-columns: 1fr 1fr;
+    }  
+}
+@media only screen and (max-width: 600px){
+    .icon-about{
+        grid-template-columns: 1fr 1fr;
+    }  
+}
+@media only screen and (max-width: 500px){
+    .icon-about{
+        grid-template-columns: 1fr 1fr;
+    }  
+}
+#icon1{
+    position: relative;
+    top: 500px;
+    transition: 1s ease-in-out;
+}
+#icon2{
+    position: relative;
+    top: 500px;
+    transition: 2s ease-in-out;
+}
+#icon3{
+    position: relative;
+    top: 500px;
+    transition: 3s ease-in-out;
+}
+#icon4{
+    position: relative;
+    top: 500px;
+    transition: 4s ease-in-out;
+}
+.icon1 i{
+   padding: 2rem;
+   margin-bottom: 1rem;
+   font-size: 2rem;
+   color: #fff;
+   background-color: blueviolet;
+   border-radius: 100%;
+    
+}
+.icon1 h3{
+    margin-bottom: 1rem;
+}
+/** Hier komt skills section */
+.skills{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    color: #fff;
+   
+}
+@media only screen and (max-width: 800px){
+    .skills{
+        grid-template-columns: 1fr;  
+    }
+    .skill1{
+        grid-column: 1/3;
+    }
+    .skill1{
+        grid-column: 1/3;
+        width: 100%;
+        align-items: center;
+    }
+}
+.skillhead{
+    grid-column: 1/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+.skillhead h2{
+    font-size:3rem;
+    border-bottom: solid 2px white;
+    width: 60%;  
+}
+.skill1{
+    padding: 1rem;
+    width: 80%;
+}
+.skill1 h2{
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    border-bottom: solid 3px white;
+}
+.skill1 h3{
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+.skill1 p{
+    text-align:start;
+    width: 70%;
+}
+.skill1 p span{
+    color: #ff7800;
+}
+/** hier komt slid animatie in deze section laat ik mijn projecten zien  **/
+.skill2{
+    padding: 1rem;
+}
+.slid{
+    position: relative;
+    width: 90%;
+    height: 30px ;
+    background-color: white;
+    
+}
+.slid span{
+    position: absolute;
+    background: linear-gradient(30deg, blueviolet, red);
+    top: 0;
+    left: 0;
+    height: 100%;
+    transition: width 2s linear;
+}
+/** Hier komt work section**/
+.project{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    color: #fff;
+    width: 100%;
+    gap: 2rem;
+    overflow: hidden;
+}
+@media only screen and (max-width: 1000px){
+    .project{
+        grid-template-columns: 1fr;
+    }
+    .werk1{
+       grid-column: 1/3;
+    }
+    .werk2{
+        grid-column: 1/3;
+     }
+     .werk3{
+        grid-column: 1/3;
+     }
+     .werk4{
+        grid-column: 1/3;
+     }
+}
+@media only screen and (max-width: 700px){
+    
+    .project .werk1 img{
+        width: 300px;
+        height: 300px;
+    }
+    .project .werk2 img{
+        width: 300px;
+        height: 300px;
+     }
+     .project .werk3 img{
+        width: 300px;
+        height: 300px;
+     }
+     .project .werk4 img{
+        width: 300px;
+        height: 300px;
+     }
+}
+.projecthead{
+    grid-column: 1/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    text-align: center;
+    margin-bottom: 4rem;
+    
+}
+.projecthead h2{
+    font-size:3rem;
+    border-bottom: solid 2px white;
+    width: 60%; 
+}
+.werk1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.werk1 img {
+    width: 500px ;
+    height: 400px;
+    position: relative;
+    right: 1000px;
+    transition: 2s;
+}
+.werk1icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+.werk1icon ul{
+  display: flex;
+  list-style: none;
+}
+.werk1icon ul li i{
+    margin: 1rem;
+    color: yellow;
+}
+.star{
+    color: #fff;
+}
+.werk2icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+.werk2icon ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+.werk2icon ul li{
+    margin: 1rem;
+    color: yellow;
+}
+.werk3icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+.werk3icon ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+.werk3icon ul li{
+    margin: 1rem;
+    color: yellow;
+}
+.werk4icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+.werk4icon ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+.werk4icon ul li{
+    margin: 1rem;
+    color: yellow;
+}
+
+
+
+.werk2 img {
+    width: 500px;
+    height: 400px;
+    cursor: pointer;
+    position: relative;
+    left: 1000px;
+    transition: 2s;
+}
+.werk3 img {
+    width: 500px;
+    height: 400px;
+    cursor: pointer;
+    position: relative;
+    right: 1000px;
+    transition: 2s;
+}
+.werk4 img {
+    width: 500px;
+    height: 400px;
+    cursor: pointer;
+    position: relative;
+    left: 1000px;
+    transition: 2s;
+}
+.werk2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.werk3{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.werk4{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/** hier komt contact form en heier kan je mijn feedback sturen of contact met mij opnemen **/
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.conthead{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 10vh;
+    width: 100%;
+}
+.conthead h2{
+    font-size:3rem;
+    border-bottom: solid 2px white;
+    margin-bottom: 5rem;
+    color: #fff;
+    width: 60%;
+}
+form{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    background-color: rgb(30, 28, 28);
+    padding: 2rem;
+    box-shadow: 10px 10px 10px rgb(0, 0, 0,5);
+}
+@media only screen and (max-width: 700px){
+    form{
+        width: 80%;
+    } 
+    .footericon li i{
+        font-size: 0.5rem;
+    }
+    .footerlink li{
+        display: none;
+    }
+}
+#name{
+    grid-column: 1/2;
+    border-radius: 5px;
+    height: 5vh;
+    color: black;
+    border: none;
+    padding: 5px;
+}
+#lastname{
+    grid-column: 2/4;
+    border-radius: 5px;
+    height: 5vh;
+    color: black;
+    border: none;
+    padding: 5px;
+}
+#email{
+    grid-column: 1/4;
+    border-radius: 5px;
+    height: 5vh;
+    color: black;
+    border: none;
+    padding: 5px;
+}
+#message{
+    grid-column: 1/4;
+    border-radius: 5px;
+    height: 20vh;
+    color: black;
+    border: none;
+    padding: 5px;
+}
+#send{
+    grid-column: 1/4;
+    border-radius: 5px;
+    height: 5vh;
+    color: black;
+    border: none;
+    padding: 5px;
+}
+/** Hier komt footer in de footer leggen icons en dit zijn linken naar mij github page en twitter en facebook**/
+footer{
+    margin-top: 3vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    height: 10vh;
+    background-color: black;
+}
+.footericon{
+    display: flex;
+}
+.footericon li {
+  margin: 1rem;
+  list-style: none;
+}
+.footericon li i{
+    font-size: 2rem;
+}
+.footericon li i:hover{
+    transform: scale(1.1);
+    transition: 1s;
+    cursor: pointer;
+}
+.footerlink{
+    display: flex;
+}
+.footerlink li{
+    list-style: none;
+    margin: 1rem;
+}
+.footerlink li:hover{
+    border-bottom:  solid 1px white;
+}
